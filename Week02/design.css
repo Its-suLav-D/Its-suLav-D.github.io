@@ -21,9 +21,9 @@ header .author {
   color: rgba(63, 142, 173, 0.952);
 }
 
-.primary .title,
-.primary .site, 
-.primary .paragraph {
+.container .primary .title,
+.container .primary .site, 
+.container .primary .paragraph {
     margin-top: 1em;
     text-align: justify;
 }
