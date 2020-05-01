@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+header {
+  background-image: linear-gradient(180deg,#a2eae2, transparent);
+}
+/* Typography */
+h1 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  letter-spacing: 4px;
+  color: rgb(212, 150, 79);
+  font-weight: lighter;
+}
+header .author {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgba(63, 142, 173, 0.952);
+}
+
+.primary .title,
+.primary .site, 
+.primary .paragraph {
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.primary .title {
+    color:teal;
+}
+
+img {
+  width: 100%;
+  margin-top: .5em;
+}
+
+.container .primary .site {
+ color: teal;
+ text-decoration: none;
+ font-size: 20px;
+}
+.primary .site:hover {
+    border: 1px solid #eee;
+    color: thistle;
+}
+
+/* Containers for 3 Items */
+.container{
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 1200px;
+}
+
+ .container .primary {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.33);
+}
+.container .primary:hover {
+  transform: scale(1.04);
+}
+
+/* Repsonsive for Tablet and Laptops */
+@media (min-width: 600px) {
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:900px) {
+  .container {
+    margin: 1rem auto;
+    width: 70%;
+    margin: 3rem auto;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
