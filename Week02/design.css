@@ -64,6 +64,16 @@ img {
   transform: scale(1.04);
 }
 
+/* Footer Section of the page */
+footer {
+	background-image: linear-gradient(180deg, #a2eae2, transparent);
+	padding: 1em 2em;
+}
+
+.firstFooter {
+	letter-spacing: 1px;
+	text-align: center;
+}
 /* Repsonsive for Tablet and Laptops */
 @media (min-width: 600px) {
   .container{
@@ -80,13 +90,3 @@ img {
   }
 }
 
-/* Footer Section of the page */
-footer {
-	background-image: linear-gradient(180deg, #a2eae2, transparent);
-	padding: 1em 2em;
-}
-
-.firstFooter {
-	letter-spacing: 1px;
-	text-align: center;
-}
