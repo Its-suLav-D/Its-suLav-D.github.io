@@ -79,3 +79,14 @@ img {
     grid-template-columns: repeat(3,1fr);
   }
 }
+
+/* Footer Section of the page */
+footer {
+	background-image: linear-gradient(180deg, #a2eae2, transparent);
+	padding: 1em 2em;
+}
+
+.firstFooter {
+	letter-spacing: 1px;
+	text-align: center;
+}
