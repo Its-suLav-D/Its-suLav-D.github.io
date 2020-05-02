@@ -22,12 +22,16 @@ header .author {
 }
 
 .container .primary .title,
-.container .primary .site, 
-.container .primary .paragraph {
+.container .primary .site 
+ {
     margin-top: 1em;
     text-align: justify;
 }
 
+.container .primary .paragraph {
+  padding: 1.5em 1em;
+  text-align: justify;
+}
 .primary .title {
     color:teal;
 }
