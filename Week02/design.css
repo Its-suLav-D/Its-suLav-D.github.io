@@ -27,6 +27,9 @@ header .author {
     margin-top: 1em;
     text-align: justify;
 }
+.container .primary .title {
+  margin-left: 1rem;
+}
 
 .container .primary .paragraph {
   padding: 1.5em 1em;
