@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
+h1,h3 {
   font-family: 'Ubuntu', sans-serif;
 }
+
 
 .intro-logo {
   font-size: 5em;
