@@ -31,7 +31,7 @@ let months = [
   'December'
 ];
 
-let date = new Date();
+let date = new Date(document.lastModified);
 let dayName = daysNames[date.getDay()];
 let monthName = months[date.getMonth()];
 let year = date.getFullYear();
