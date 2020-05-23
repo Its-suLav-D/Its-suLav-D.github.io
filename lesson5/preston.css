@@ -116,7 +116,6 @@ h2 {
    text-align: center;
  }
 
-}
 /* Main Section */
 
 
@@ -271,7 +270,7 @@ footer {
         max-width:1200px;
         margin: 0 auto;
       }
-      
+
       .hero-image img{
         filter: blur(.8px);
       }
