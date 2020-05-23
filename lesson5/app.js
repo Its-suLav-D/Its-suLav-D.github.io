@@ -52,7 +52,7 @@ function checkAd() {
   ];
   let date = new Date();
   let checkDay = dayName[date.getDay()];
-  if(checkDay === 'Thursday') {
+  if(checkDay === 'Friday') {
     document.getElementById('checkAds').style.display = "block";
     document.getElementById('toggleMenu').style.top = "6.5em";
   } else {
