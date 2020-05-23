@@ -12,8 +12,11 @@ h2 {
   text-align: center;
   border: 2px solid green;
 }
-/* p {
+h5 {
   font-family: 'Josefin', sans-serif;
+}
+/* p {
+  
 } */
 
 .intro-logo {
@@ -212,9 +215,11 @@ h2 {
   text-align: center;
   margin: .2em 0;
   color: #f1f1f1;
+  font-family: 'Josefin', sans-serif;
 }
 .summary-info{
   color: tomato;
+  font-weight: bold;
 }
 /* Contact */
 .contact-info img{
