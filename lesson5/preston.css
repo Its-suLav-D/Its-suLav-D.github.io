@@ -213,7 +213,7 @@ h2 {
   margin: .2em 0;
   color: #f1f1f1;
 }
-span {
+.summary-info{
   color: tomato;
 }
 /* Contact */
