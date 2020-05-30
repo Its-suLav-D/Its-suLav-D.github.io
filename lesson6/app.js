@@ -78,7 +78,7 @@ function checkAd() {
   li.forEach(item => {
     item.addEventListener('click', function() {
       ul.querySelector('.active').classList.remove('active');
-
+ 
       item.classList.add('active');
     });
   });
@@ -96,5 +96,5 @@ function buildWC(speed,temp) {
 
   console.log(wc);
   
- return wc;
+  return wc;
 }
