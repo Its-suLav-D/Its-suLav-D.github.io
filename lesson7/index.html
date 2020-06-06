@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="preston.css">
+    <link rel="icon" href="favicon.jpg" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onload="checkAd()">
+    <aside id="checkAds">
+      <h5>Friday = Thank god its Friday</h5>
+    </aside>
+    <header class="intro">
+      <div class="intro-logo"><i class="fa fa-soundcloud"></i></div>
+      <div class="siteName">
+        <h1 class="siteTitle">iRain</h1>
+        <p class="motto">Code for Weather</p>
+      </div>
+    </header>
+    <nav class="nav-bar" onclick="setActive()">
+          <span class="navbar-toggle" id="toggleMenu">
+          <i class="fa fa-bars"></i>
+        </span>
+        <a href="#" class="logo"><i class="fa fa-soundcloud"></i></a>
+          <ul class="main-nav" id="menu">
+            <li><a class="nav-links" href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a class="nav-links" href="#">Preston</a></li>
+            <li><a class="nav-links" href="#">Soda Springs</a></li>
+            <li><a class="nav-links" href="#">Fish Haven</a></li>
+            <li><a class="nav-links" href="#">Storm Center</a></li>
+            <li class="active"><a class="nav-links" href="#">Gallery</a></li>
+          </ul>
+      </nav>
+
+  <!-- Responsive Gallery -->
+  <div class="gallery">
+    <figure class="gallery-item gallery-item-1">
+      <img src="gallery/awesome.jpg" data-src="gallery/awesome.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">Peaceful Weather</h5>
+      </div>
+    </figure>
+
+    <figure class="gallery-item gallery-item-2 ">
+      <img src="gallery/sfu.jpg" data-src="gallery/sfu.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">A Sunny Weather</h5>
+      </div>
+    </figure>
+
+    <figure class="gallery-item gallery-item-3">
+      <img src="gallery/cloud.jpg" data-src="gallery/cloud.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">Cloudy</h5>
+      </div>
+    </figure>
+
+    <figure class="gallery-item gallery-item-4">
+      <img src="gallery/thunder.jpg" data-src="gallery/thunder.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">Thunder Strike</h5>
+      </div>
+    </figure>
+
+    <figure class="gallery-item gallery-item-5">
+      <img src ="gallery/black.jpg" data-src="gallery/black.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">Rainy Day</h5>
+      </div>
+    </figure>
+
+    <figure class="gallery-item gallery-item-6">
+      <img src ="gallery/house.jpg" data-src="gallery/house.jpg" alt="">
+      <div class="card-text">
+        <h5 class="title-text">Peaceful Weather</h5>
+      </div>
+    </figure>
+  </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
