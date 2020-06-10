@@ -1,0 +1,26 @@
+table {
+    background-color:#fff;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #7fb9c2;
+}
+td {
+    text-align: center;
+}
+tr {
+    background-color:#e7f0ed;
+}
+tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+.th {
+    color:#fff;
+    background-color: #7fb9c2;
+}
+tfoot>tr>td {
+    background-color: #7fb9c2;
+    font-size:.6rem;
+}
