@@ -377,11 +377,11 @@ footer {
         margin: 2em auto;
       }
 
-      img {
+      /* img {
         width:100%;
         height:100%;
         object-fit: cover;
-  }
+  } */
       .gallery {
         display: grid;
         grid-template-columns:repeat(3,1fr);
@@ -416,7 +416,7 @@ footer {
 .left img {
     max-width: 100%;
     display: block;
-    margin: 15em auto;
+    margin: 15em 0;
 }
 .left {
     grid-column: 1/2;
@@ -546,7 +546,7 @@ footer {
         margin-top: 7em;
       }
 /* Responsive Gallery */
-.gallery {
+/* .gallery {
 display:grid;
 grid-template-columns: repeat(8,1fr);
 width: 60%;
@@ -588,7 +588,7 @@ grid-row:2/3;
 .gallery-item-6 {
 grid-column:4/-1;
 grid-row: 4/5;
-}
+} */
 /* Storm Center */
 .report-center {
   display: grid;
