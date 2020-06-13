@@ -336,11 +336,15 @@ input {
   border: none;
   border-radius: 50px;
  }
+
  .button1 {
    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
  } 
 
+.text-area {
+  margin: 1em 2em;
+}
 /* Footer */
 footer {
      background-image: linear-gradient(180deg, #a2eae2, transparent);
@@ -650,6 +654,9 @@ padding: .5em;
 .flexly {
   display: flex;
   align-items: center;
+}
+.text-area {
+  margin: 1em 2em;
 }
 .button {
   width: 150px;
