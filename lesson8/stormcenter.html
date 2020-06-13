@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="preston.css">
+    <link rel="icon" href="favicon.jpg" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onload="checkAd()">
+    <aside id="checkAds">
+      <h5>Friday = Thank god its Friday</h5>
+    </aside>
+    <header class="intro">
+      <div class="intro-logo"><i class="fa fa-soundcloud"></i></div>
+      <div class="siteName">
+        <h1 class="siteTitle">iRain</h1>
+        <p class="motto">Code for Weather</p>
+      </div>
+    </header>
+    <nav class="nav-bar" onclick="setActive()">
+          <span class="navbar-toggle" id="toggleMenu">
+          <i class="fa fa-bars"></i>
+        </span>
+        <a href="#" class="logo"><i class="fa fa-soundcloud"></i></a>
+          <ul class="main-nav" id="menu">
+            <li><a class="nav-links" href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a class="nav-links" href="#">Preston</a></li>
+            <li><a class="nav-links" href="#">Soda Springs</a></li>
+            <li><a class="nav-links" href="#">Fish Haven</a></li>
+            <li class="active"><a class="nav-links" href="#">Storm Center</a></li>
+            <li><a class="nav-links" href="#">Gallery</a></li>
+          </ul>
+      </nav>
+      <!-- Contact Section -->
+      <div class="report-center">
+        <h1 class="contactTitle">Contact Us</h1>
+        <div class="left">
+           
+            <img src="cot.png" alt="">
+        </div>
+        <div class="right">
+            
+            <form class= "email-collector" action="Thankyou/thanks.html" method="get" target="_blank">
+                <h4>Personal Information:</h4>
+                <label for="fullName">FullName: 
+                    <input id="fullName" type="text" placeholder="Full Name" name="fullName" required  pattern="[A-Za-z]{5,50}" title="Only Alpha Characters Please!!">
+                </label>
+          
+                <label for="email">Email Address: 
+                <input type="email" placeholder="name@gmail.com" name="email" id="email">
+                </label>
+      
+        <h4>Contact Information</h4>
+                <label for="contact">Phone Number: 
+                    <input type="tel" required placeholder="(999) - 99- 9999" id="contact">
+                </label>
+  
+                <label for="zip">Zip Code:
+                    <input type="number" required name="zip" id="zip">
+                </label>
+                   <h4>Storm Information</h4>
+                <label for="stormDate">Storm Date: 
+                    <input type="date" name="stormDate" id="stormDate">
+                </label>
+<!-- <br> -->
+                <label for="stormType">Storm Type
+                    <input list="storms" name="stormType" id="stormType" placeholder="Hurricane">
+                </label>
+                <datalist id=storms>
+                    <option value="Flash Food">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            <!-- <br> -->
+                <label  class="flexly" for="slider">Storm Severity:
+                <input type="range" id="slider" name="range" min="0" max="10" step="1"
+                list="tickmarks"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)">
+                <span id="ratingValue">5</span>
+            </label>
+            <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </datalist>
+                <label for="stormRegion">Storm Region
+                <select name="stormRegion" id="stormRegion" required>
+                    <option value="" selected="" disabled>Select Region..</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodaSprings">Soda Springs</option>
+                    <option value="fishHaven">Fish Haven</option>
+                </select>
+            </label>
+            <div class="danger">
+                <p>Danger Level:</p>
+                <label  class="radio-btn" for="yes">Yes</label>
+                <input  type="radio" name="danger" value="yes" id="yes">
+                <label  class="radio-btn" for="no">No</label>
+                <input  type="radio" name="danger" value="no" id="no">
+                <label class="radio-btn"  for="mayBe">May Be</label>
+                <input type="radio" name="danger" value="mayBe" id="mayBe">
+                <br>
+            </div>
+                <textarea name="comment" id="comment" cols="35" rows="10" placeholder="AdditionalInformation">
+
+                </textarea>
+            <br>
+            <button class="button button1" type="submit">
+                Register
+              </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
+
