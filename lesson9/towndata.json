@@ -15,7 +15,7 @@
     },
     {
       "name": "Fish Haven",
-      "photo": "/fishHaven.jpg",
+      "photo": "fishHaven.jpg",
       "motto": "This is Fish Heaven.",
       "yearFounded": 1864,
       "currentPopulation": 501,
@@ -55,7 +55,7 @@
     },
     {
       "name": "Preston",
-      "photo": "/preston.jpg",
+      "photo": "preston.jpg",
       "motto": "Home of Napoleon Dynamite.",
       "yearFounded": 1866,
       "currentPopulation": 5204,
@@ -68,7 +68,7 @@
     },
     {
       "name": "Soda Springs",
-      "photo": "/soda.jpg",
+      "photo": "soda.jpg",
       "motto": "Historic Oregon Trail Oasis.",
       "yearFounded": 1858,
       "currentPopulation": 2985,
