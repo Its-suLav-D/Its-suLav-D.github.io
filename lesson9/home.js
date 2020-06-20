@@ -42,7 +42,7 @@
                 let image = document.createElement('img');
                 image.setAttribute('src', city.photo);
                 image.setAttribute('class','town-images');
-                image.setAttribute('alt','town-images');
+                image.setAttribute('alt',`town-images`);
         
                 let name = document.createElement('h2');
                 name.textContent =city.name;
