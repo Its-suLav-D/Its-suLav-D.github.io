@@ -121,7 +121,7 @@ fetch(apiURL)
   })
 
 
-const url ="http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=6bfa38a5c2a349e9ca7233d67d045cb8";
+const url ="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=6bfa38a5c2a349e9ca7233d67d045cb8";
 fetch(url) 
   .then(response => {
     if(response.ok) {
@@ -155,8 +155,10 @@ fetch(url)
           dayForeCast.append(title);
         }       
   }) 
- 
+
 });
+
+
 
 
   function dayOfWeek(day) {
