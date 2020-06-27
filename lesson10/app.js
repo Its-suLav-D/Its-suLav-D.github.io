@@ -85,9 +85,8 @@ function checkAd() {
     });
   });
 }
-// Function to calculate the Wind 
+// Function to calculate the Wind Chill 
 function buildWC(speed,temp) {
-  // let wcTemp = document.getElementById('windChill');
 
   let wc = 35.74+0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
   console.log(wc);
@@ -115,7 +114,7 @@ fetch(apiURL)
   .then(jsObject=> {
     console.log(jsObject);
     document.querySelector('#weatherDesc').textContent = jsObject.weather[0].main;
-    document.querySelector('#highTemp').textContent = jsObject.main.temp;
+    document.querySelector('#highTemp').textContent = Math.round(jsObject.main.temp);
     document.querySelector('#windSpeed').textContent = jsObject.wind.speed;
     document.querySelector('#humid').textContent = jsObject.main.humidity;
   })

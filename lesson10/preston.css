@@ -324,6 +324,9 @@ footer {
         display: block;
         margin-top: .5em;
       }
+      .noScript {
+        display: none;
+      }
       .forecast-table th {
         background-color: tomato;
         padding: .5em .5em;
