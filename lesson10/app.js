@@ -1,10 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function(){
   let currDate = document.getElementById('lastUpdated');
-  let speed = document.getElementById('windSpeed').innerHTML;
-  let temp  = document.getElementById('highTemp').innerHTML;
-  let wind = document.getElementById('windChill');
-   wind.innerHTML = buildWC(speed, temp);
    currDate.textContent = checkDate();
 });
 
@@ -117,6 +113,11 @@ fetch(apiURL)
     document.querySelector('#highTemp').textContent = Math.round(jsObject.main.temp);
     document.querySelector('#windSpeed').textContent = jsObject.wind.speed;
     document.querySelector('#humid').textContent = jsObject.main.humidity;
+
+    let speed = jsObject.wind.speed;
+    let temp  = Math.round(jsObject.main.temp);
+    let wind = document.getElementById('windChill');
+     wind.innerHTML = buildWC(speed, temp);
   })
 
 
