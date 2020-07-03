@@ -1,8 +1,7 @@
-*{
-    margin: 0;
-}
+
 
 .container {
     border: 2px solid tomato;
+    margin-top: 2em !important;
     padding: 5em 5em;
 }

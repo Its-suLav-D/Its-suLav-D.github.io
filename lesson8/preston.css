@@ -281,7 +281,10 @@ img {
 label  {
   display: block;
    padding: 1em 0;
-   margin: 0 2em;
+   margin: 0 1em;
+}
+.info-holder {
+  margin-left: 1em;
 }
 input {
    padding: .5em .5em;
@@ -305,7 +308,10 @@ input {
   display: flex;
   justify-content:start;
   align-items: center;
-  margin:0 2em;
+  margin:0 1em;
+}
+.danger > label {
+  margin-left: .2em;
 }
 #ratingValue {
   background-color:linen;
@@ -322,7 +328,7 @@ input {
   margin: .5em auto;
 }
 #comment {
-  margin: 0 2em;
+  margin:.5em;
 } 
 .button {
   width: 150px;
@@ -330,11 +336,12 @@ input {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin:10px;
   height: 30px;
   text-align:center;
   border: none;
   border-radius: 50px;
+  margin-left: 7em;
  }
 
  .button1 {
@@ -655,8 +662,9 @@ padding: .5em;
   display: flex;
   align-items: center;
 }
-.text-area {
-  margin: 1em 2em;
+#comment {
+  margin: .5em;
+  background-color:linen;
 }
 .button {
   width: 150px;
@@ -664,11 +672,12 @@ padding: .5em;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin: 0px 0px 0px 5em;
   height: 30px;
   text-align:center;
   border: none;
   border-radius: 50px;
+ 
 }
 .button1 {
   background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);

@@ -42,12 +42,12 @@
         <h1 class="contactTitle">Contact Us</h1>
         <div class="left">
            
-            <img src="cot.png" alt="">
+            <img src="cot.png" alt="Contact Us">
         </div>
         <div class="right">
             
             <form class= "email-collector" action="Thankyou/thanks.html" method="get" target="_blank">
-                <h4>Personal Information:</h4>
+                <h4 class="info-holder">Personal Information:</h4>
                 <label for="fullName">FullName: 
                     <input id="fullName" type="text" placeholder="Full Name" name="fullName" required  pattern="[A-Za-z]{5,50}" title="Only Alpha Characters Please!!">
                 </label>
@@ -56,7 +56,7 @@
                 <input type="email" placeholder="name@gmail.com" name="email" id="email">
                 </label>
       
-        <h4>Contact Information</h4>
+        <h4 class="info-holder">Contact Information</h4>
                 <label for="contact">Phone Number: 
                     <input type="tel" required placeholder="(999) - 99- 9999" id="contact">
                 </label>
@@ -64,7 +64,7 @@
                 <label for="zip">Zip Code:
                     <input type="number" required name="zip" id="zip">
                 </label>
-                   <h4>Storm Information</h4>
+                   <h4 class="info-holder">Storm Information</h4>
                 <label for="stormDate">Storm Date: 
                     <input type="date" name="stormDate" id="stormDate">
                 </label>
@@ -109,7 +109,7 @@
                 </select>
             </label>
             <div class="danger">
-                <p>Danger Level:</p>
+                <p id ="danger-area">Danger Level:</p>
                 <label  class="radio-btn" for="yes">Yes</label>
                 <input  type="radio" name="danger" value="yes" id="yes">
                 <label  class="radio-btn" for="no">No</label>
@@ -118,11 +118,11 @@
                 <input type="radio" name="danger" value="mayBe" id="mayBe">
                 <br>
             </div>
-              <span class="text-area">Comment or Additional Information:</span>
-                <textarea name="comment" id="comment" cols="35" rows="10">
+            <label for="comment">Comment or Additional Information:
+                <textarea name="text-area" id="comment" cols="35" rows="10" placeholder="Describe incident..">
 
                 </textarea>
-            <br>
+              </label>
             <button class="button button1" type="submit">
                 Register
               </button>

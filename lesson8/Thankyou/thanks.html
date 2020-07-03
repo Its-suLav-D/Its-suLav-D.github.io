@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <link rel="stylesheet" href="thanks.css">
+    <link rel="stylesheet" href="../preston.css">
+    <link rel="icon" href="../favicon.jpg" type="image/gif" sizes="16x16">
 </head>
 <body>
+    <header class="intro">
+        <div class="intro-logo"><i class="fa fa-soundcloud"></i></div>
+        <div class="siteName">
+          <h1 class="siteTitle">iRain</h1>
+          <p class="motto">Code for Weather</p>
+        </div>
+      </header>
+      <nav class="nav-bar" onclick="setActive()">
+            <span class="navbar-toggle" id="toggleMenu">
+            <i class="fa fa-bars"></i>
+          </span>
+          <a href="#" class="logo"><i class="fa fa-soundcloud"></i></a>
+            <ul class="main-nav" id="menu">
+              <li><a class="nav-links" href="https://its-sulav-d.github.io/lesson9/index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li><a class="nav-links" href="https://its-sulav-d.github.io/lesson11/preston-10.html">Preston</a></li>
+              <li><a class="nav-links" href="https://its-sulav-d.github.io/lesson11/sodaspring/sodaspring.html">Soda Springs</a></li>
+              <li><a class="nav-links" href="https://its-sulav-d.github.io/lesson11/fishHaven/fish-haven.html">Fish Haven</a></li>
+              <li class="active"><a class="nav-links" href="#">Storm Center</a></li>
+              <li><a class="nav-links" href="https://its-sulav-d.github.io/lesson7/index.html">Gallery</a></li>
+            </ul>
+        </nav>
     <div class="container">
         <h1>Thank You!</h1>
         <p>Your Report has been successfully Submited.
             Please check your email for further instructions.
         </p>
     </div>
+
+    <footer>
+        <p class="firstFooter"> &#169; iRain Weather Site | <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank"> MDN Documentation Site</a> | Sulav Dahal  Last Updated: <span id="lastUpdated"></span></p>
+      </footer>
+
+      <script src="thanks.js"></script>
     
 </body>
 </html>
