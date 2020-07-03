@@ -167,29 +167,5 @@ fetch(url)
   }
 
 
-  // Events 
 
-    const url = 'towndata.json';
-    fetch(url)
-        .then(function(response){
-            if(response.ok) {
-                return response.json();
-            }
-            throw new ERROR('Network response was not ok');
-        })
-    
-        .then(function(jsonObject){
-            console.log(jsonObject);
-          let upcomingEvent = document.getElementById('events'); 
-          jsonObject.towns.forEach(event => {
-            if(event.name ="Preston") {
-              let h4 = document.createElement('h4');
-              let smallInfo = document.createElement('small');
-              h4.textContent = event.events;
-              upcomingEvent.append(h4);
-            }
-          })
-
-        })
- 
 
